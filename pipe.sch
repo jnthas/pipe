@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Pirilampo Perpétuo"
+Date "2020-12-31"
+Rev "v1"
+Comp "Aprendendo e Praticando Eletrônica no. 5"
 Comment1 ""
 Comment2 ""
 Comment3 ""
