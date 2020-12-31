@@ -1,0 +1,176 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BC548 Q1
+U 1 1 5FEA59BF
+P 5400 3250
+F 0 "Q1" H 5591 3296 50  0000 L CNN
+F 1 "BC548" H 5591 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5600 3175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 5400 3250 50  0001 L CNN
+	1    5400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC558 Q2
+U 1 1 5FEA5E8F
+P 6300 2900
+F 0 "Q2" H 6491 2946 50  0000 L CNN
+F 1 "BC558" H 6491 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6500 2825 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 6300 2900 50  0001 L CNN
+	1    6300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FEA652A
+P 5800 2900
+F 0 "R3" V 5593 2900 50  0000 C CNN
+F 1 "1K" V 5684 2900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5730 2900 50  0001 C CNN
+F 3 "~" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FEA69E6
+P 5100 2850
+F 0 "R1" H 5170 2896 50  0000 L CNN
+F 1 "2M2" H 5170 2805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5030 2850 50  0001 C CNN
+F 3 "~" H 5100 2850 50  0001 C CNN
+	1    5100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FEA6E80
+P 6600 3950
+F 0 "R4" H 6670 3996 50  0000 L CNN
+F 1 "47" H 6670 3905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 6530 3950 50  0001 C CNN
+F 3 "~" H 6600 3950 50  0001 C CNN
+	1    6600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5FEA742B
+P 6000 3550
+F 0 "C1" V 5745 3550 50  0000 C CNN
+F 1 "2.2uF" V 5836 3550 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 6038 3400 50  0001 C CNN
+F 3 "~" H 6000 3550 50  0001 C CNN
+	1    6000 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FEA8506
+P 6900 2750
+F 0 "D1" V 6939 2632 50  0000 R CNN
+F 1 "LED" V 6848 2632 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6900 2750 50  0001 C CNN
+F 3 "~" H 6900 2750 50  0001 C CNN
+	1    6900 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensor_Optical:LDR03 R2
+U 1 1 5FEA8C59
+P 5100 3800
+F 0 "R2" H 5170 3846 50  0000 L CNN
+F 1 "LDR03" H 5170 3755 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_7x6mm_P5.1mm_Vertical" V 5275 3800 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 5100 3750 50  0001 C CNN
+	1    5100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4100 5500 4100
+Wire Wire Line
+	5100 4100 5100 3950
+Wire Wire Line
+	6400 2700 6600 2700
+Wire Wire Line
+	6400 3100 6900 3100
+Wire Wire Line
+	6900 3100 6900 2900
+Wire Wire Line
+	6900 2600 5100 2600
+Wire Wire Line
+	5100 2700 5100 2600
+Wire Wire Line
+	5200 3250 5100 3250
+Wire Wire Line
+	5100 3250 5100 3000
+Wire Wire Line
+	5100 3250 5100 3550
+Connection ~ 5100 3250
+Wire Wire Line
+	5500 3450 5500 4100
+Connection ~ 5500 4100
+Wire Wire Line
+	5500 4100 6600 4100
+Wire Wire Line
+	5500 3050 5500 2900
+Wire Wire Line
+	5500 2900 5650 2900
+Wire Wire Line
+	5950 2900 6100 2900
+Wire Wire Line
+	6600 2700 6600 3550
+Wire Wire Line
+	5100 3550 5850 3550
+Connection ~ 5100 3550
+Wire Wire Line
+	5100 3550 5100 3650
+Wire Wire Line
+	6150 3550 6600 3550
+Connection ~ 6600 3550
+Wire Wire Line
+	6600 3550 6600 3800
+$Comp
+L power:+3V0 #PWR0101
+U 1 1 5FEF1A8E
+P 4700 2600
+F 0 "#PWR0101" H 4700 2450 50  0001 C CNN
+F 1 "+3V0" H 4715 2773 50  0000 C CNN
+F 2 "" H 4700 2600 50  0001 C CNN
+F 3 "" H 4700 2600 50  0001 C CNN
+	1    4700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 5FEF2F47
+P 4700 4100
+F 0 "#PWR0102" H 4700 3850 50  0001 C CNN
+F 1 "GNDREF" H 4705 3927 50  0000 C CNN
+F 2 "" H 4700 4100 50  0001 C CNN
+F 3 "" H 4700 4100 50  0001 C CNN
+	1    4700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4100 5100 4100
+Connection ~ 5100 4100
+Wire Wire Line
+	4700 2600 5100 2600
+Connection ~ 5100 2600
+$EndSCHEMATC
