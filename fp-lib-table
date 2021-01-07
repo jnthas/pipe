@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Pipe)(type KiCad)(uri /home/jonathas/projects/pipe)(options "")(descr ""))
+)

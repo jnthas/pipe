@@ -1,4 +1,4 @@
-19209537266771948
+19211163639822346
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -40304,7 +40304,7 @@ Through hole straight socket strip, 2x08, 2.54mm pitch, double cols (from Kicad 
 Through hole socket strip THT 2x08 2.54mm double row
 0
 16
-16
+15
 Connector_PinSocket_2.54mm
 PinSocket_2x08_P2.54mm_Vertical_SMD
 surface-mounted straight socket strip, 2x08, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
@@ -73408,6 +73408,13 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+Pipe
+TO-92
+TO-92 leads molded, narrow, drill 0.75mm (see NXP sot054_po.pdf)
+to-92 sc-43 sc-43a sot54 PA33 transistor
+0
+3
+3
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf

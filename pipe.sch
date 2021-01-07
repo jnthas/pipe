@@ -14,23 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Transistor_BJT:BC548 Q1
-U 1 1 5FEA59BF
-P 5400 3250
-F 0 "Q1" H 5591 3296 50  0000 L CNN
-F 1 "BC548" H 5591 3205 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5600 3175 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 5400 3250 50  0001 L CNN
-	1    5400 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_BJT:BC558 Q2
 U 1 1 5FEA5E8F
 P 6300 2900
 F 0 "Q2" H 6491 2946 50  0000 L CNN
 F 1 "BC558" H 6491 2855 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6500 2825 50  0001 L CIN
+F 2 "Pipe:TO-92" H 6500 2825 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 6300 2900 50  0001 L CNN
 	1    6300 2900
 	1    0    0    -1  
@@ -145,17 +134,21 @@ Wire Wire Line
 Connection ~ 6600 3550
 Wire Wire Line
 	6600 3550 6600 3800
+Connection ~ 5100 4100
+Connection ~ 5100 2600
 $Comp
-L power:+3V0 #PWR0101
-U 1 1 5FEF1A8E
-P 4700 2600
-F 0 "#PWR0101" H 4700 2450 50  0001 C CNN
-F 1 "+3V0" H 4715 2773 50  0000 C CNN
-F 2 "" H 4700 2600 50  0001 C CNN
-F 3 "" H 4700 2600 50  0001 C CNN
-	1    4700 2600
+L Transistor_BJT:BC548 Q1
+U 1 1 5FEA59BF
+P 5400 3250
+F 0 "Q1" H 5591 3296 50  0000 L CNN
+F 1 "BC548" H 5591 3205 50  0000 L CNN
+F 2 "Pipe:TO-92" H 5600 3175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 5400 3250 50  0001 L CNN
+	1    5400 3250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4700 4100 5100 4100
 $Comp
 L power:GNDREF #PWR0102
 U 1 1 5FEF2F47
@@ -168,9 +161,16 @@ F 3 "" H 4700 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 4100 5100 4100
-Connection ~ 5100 4100
-Wire Wire Line
 	4700 2600 5100 2600
-Connection ~ 5100 2600
+$Comp
+L power:+3V0 #PWR0101
+U 1 1 5FEF1A8E
+P 4700 2600
+F 0 "#PWR0101" H 4700 2450 50  0001 C CNN
+F 1 "+3V0" H 4715 2773 50  0000 C CNN
+F 2 "" H 4700 2600 50  0001 C CNN
+F 3 "" H 4700 2600 50  0001 C CNN
+	1    4700 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
